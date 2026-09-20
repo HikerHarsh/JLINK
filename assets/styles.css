@@ -1,0 +1,91 @@
+/* Main Container */
+.jd-widget-container {
+  position: absolute !important;
+  z-index: 2147483647 !important; 
+  pointer-events: auto !important; 
+  display: flex !important;
+  flex-direction: column !important; 
+  align-items: stretch !important;
+  background-color: rgba(30, 30, 30, 0.95) !important;
+  border-radius: 8px !important;
+  padding: 6px !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6) !important;
+  border: 1px solid #444 !important;
+  backdrop-filter: blur(6px) !important; 
+  margin: 0 !important;
+  width: auto !important;
+}
+
+/* Header Row (Handle + Btn + X) */
+.jd-widget-header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Drag Handle */
+.jd-drag-handle {
+  cursor: grab !important;
+  color: #bbb !important;
+  padding: 0 4px !important;
+  font-size: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  user-select: none !important;
+}
+
+.jd-drag-handle:active {
+  cursor: grabbing !important;
+}
+
+.jd-drag-handle:hover {
+  color: #fff !important;
+}
+
+/* The Main Download Button */
+.jd-download-btn {
+  background-color: #f39c12 !important; 
+  color: white !important;
+  border: none !important;
+  padding: 6px 14px !important;
+  border-radius: 4px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.2s, transform 0.1s !important;
+  margin: 0 8px !important;
+  flex-grow: 1 !important;
+}
+
+.jd-download-btn:hover {
+  background-color: #e67e22 !important;
+}
+
+.jd-download-btn:active {
+  transform: scale(0.96) !important;
+}
+
+/* The Close (X) Button */
+.jd-close-btn {
+  background: none !important;
+  border: none !important;
+  color: #999 !important;
+  font-size: 20px !important;
+  cursor: pointer !important;
+  padding: 0 4px !important;
+  font-weight: bold !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: color 0.2s !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.jd-close-btn:hover {
+  color: #ff4d4d !important;
+}
